@@ -1,15 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import {useReducer} from "react";
 
-function App() {
 
-  let title ='hello okten'
-
-  return (
-    <div >
-<h2>{title}</h2>
-    </div>
-  );
+const init = (initialvalue) => {
+    return {counter1: initialvalue, counter2: initialvalue}
 }
 
-export default App;
+const reducer = (state, action) => {
+    console.log(action)
+    return {...state}
+}
+
+const App = () => {
+    const [state, dispatch] = useReducer(reducer, 0, init);
+    return (
+        <div>
+
+            <h1>counter1:{state.counter1}</h1>
+            <h1>counter2:{state.counter2}</h1>
+            <button onClick={()=>dispatch({type:'INC'})}>inc</button>
+            <button>dec</button>
+            <button>reset</button>
+            <button>set</button>
+
+
+        </div>
+    );
+}
+
+export  {App};
