@@ -1,15 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import Simpson from "./components/Homework 1/Simpson/Simpsons";
+import Users from "./components/Homework 1/Rick and Morty/R&M";
+
 
 function App() {
 
-  let title ='hello okten'
+
 
   return (
     <div >
-<h2>{title}</h2>
+        <Simpson/>
+        <Users/>
     </div>
   );
 }
+
 
 export default App;

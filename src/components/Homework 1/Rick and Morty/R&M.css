@@ -1,0 +1,29 @@
+.main {
+    margin: 0 auto;
+    width: 80%;
+    height: 700px;
+    background: black;
+    display: flex;
+     flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+.main>h2{
+    width: 100%;
+    color: aliceblue;
+   display: flex;
+    justify-content: center;
+}
+.blok{
+    height: 180px;
+    width: 45%;
+    border: 1px solid red;
+    border-radius: 10px;
+    display: flex;
+    background: darkgrey;
+}
+.title{
+    height: 100%;
+    width: 60%;
+    color: aliceblue;
+}
