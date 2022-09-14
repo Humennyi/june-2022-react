@@ -1,0 +1,23 @@
+
+.SimpsonFamily{
+    margin: 0 auto;
+    height: 400px;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.card{
+    height: 350px;
+    width: 23%;
+    border: 1px solid red;
+  border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center ;
+}
+.card>img{
+    height: 70%;
+    width: 90%;
+}
