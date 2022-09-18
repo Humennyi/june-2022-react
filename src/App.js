@@ -1,30 +1,18 @@
-
 import './App.css';
-import {useEffect, useState} from "react";
-import {getUsers} from "./sevices/user.service";
-import UserComponent from "./components/UserComponent";
+import Users from "./components/users/Users";
+// import UserChoser from "./components/user-choser/UserChoser";
 
 function App() {
 
- let [users,setUsers]=useState([]);
 
-useEffect(()=>{
-  getUsers().then(value => setUsers(value.data));
-},[])
-    const chooseUser=(id)=>{
-        console.log(id);
-    }
+  return (<div>
+    <h2>app component header</h2>
+    <Users/>
 
-  return (
-    <div >
-        {users.map(value => <
-            UserComponent
-            key={value.id}
-            chooseUser={chooseUser}
+    {/*<UserChoser/>*/}
 
-        />)}
-
-    </div>);
+  </div>);
 }
 
 export default App;
+
