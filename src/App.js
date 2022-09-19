@@ -1,13 +1,15 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Launches from "./components/launches/Launches";
+// import Users from "./components/Users/Users";
 
 function App() {
 
-  let title ='hello okten'
 
   return (
     <div >
-<h2>{title}</h2>
+{/*<Users/>*/}
+    <Launches/>
     </div>
   );
 }
