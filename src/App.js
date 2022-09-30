@@ -1,13 +1,16 @@
-import logo from './logo.svg';
+
 import './App.css';
+import {Counter1, Counter2} from "./components";
 
 function App() {
 
-  let title ='hello okten'
+
 
   return (
     <div >
-<h2>{title}</h2>
+        <Counter1/>
+        <hr/>
+        <Counter2/>
     </div>
   );
 }
