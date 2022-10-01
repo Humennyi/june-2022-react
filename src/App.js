@@ -1,15 +1,30 @@
-import logo from './logo.svg';
+
 import './App.css';
+import {Navigate, Route, Routes} from "react-router-dom";
+import {MainLayout} from "./layouts";
+import {LoginPage, RegisterPage} from "./pages";
+import {CarsPage} from "./pages/CarsPage/CarsPage";
 
-function App() {
 
-  let title ='hello okten'
+const App=() =>{
+
+
 
   return (
     <div >
-<h2>{title}</h2>
+        <Routes>
+            <Route path={'/'} element={<MainLayout/>}>
+                <Route index element={<Navigate to={'/login'}/>}/>
+                <Route path={'/login'} element={<LoginPage/>}/>
+                <Route path={'/register'} element={<RegisterPage/>}/>
+                <Route path={'/cars'} element={<CarsPage/>}/>
+
+
+            </Route>
+        </Routes>
+
     </div>
   );
 }
 
-export default App;
+export {App};
