@@ -5,7 +5,7 @@ const CarForm = () => {
 
     return (
         <div>
-            CarForm
+             CarForm
         </div>
     );
 };
