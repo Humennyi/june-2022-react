@@ -1,15 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import {Cats} from "./components/cats/Cats";
+import {Dogs} from "./components/dogs/Dogs";
+import css from "./app.module.css"
+
 
 function App() {
 
-  let title ='hello okten'
 
-  return (
-    <div >
-<h2>{title}</h2>
-    </div>
-  );
+    return (
+        <div className={css.main}>
+            <Cats/>
+            <Dogs/>
+
+        </div>
+    );
 }
 
 export default App;
